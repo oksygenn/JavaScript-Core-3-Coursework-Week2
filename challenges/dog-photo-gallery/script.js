@@ -11,7 +11,8 @@ const getPicture = () => {
     .then((response) => response.json())
     .then((obj) => {
       render(obj);
-    });
+    })
+    .catch((error) => console.log(error));
 };
 
 const render = (obj) => {
