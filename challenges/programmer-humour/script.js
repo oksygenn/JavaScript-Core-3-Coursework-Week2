@@ -1,8 +1,8 @@
-const API = "https://xkcd.now.sh/?comic=latest";
+const URL = "https://xkcd.now.sh/?comic=latest";
 
 const getPicture = () => {
   const body = document.querySelector("body");
-  fetch(API)
+  fetch(URL)
     .then((response) => {
       if (response.ok) {
         return response.json();
